@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section className="px-6 py-20">
+    <section id="sobre" className="px-6 py-20">
       <div className="mx-auto max-w-5xl text-center">
         <h2 className="text-4xl font-bold">
           Sobre a Vertex11
