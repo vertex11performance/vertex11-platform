@@ -2,16 +2,19 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Footer from "@/components/Footer";
+import About from "@/components/About";
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
-      <Navbar />
+<Navbar />
 
-      <Hero />
+<Hero />
 
-      <Services />
+<About />
 
-      <Footer />
+<Services />
+
+<Footer />
     </main>
   );
 }
