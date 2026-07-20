@@ -1,6 +1,10 @@
+import Navbar from "@/components/Navbar";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
+      <Navbar />
+
       <section className="flex min-h-screen flex-col items-center justify-center px-6 text-center">
         <h1 className="text-5xl font-bold tracking-tight">
           VERTEX11
