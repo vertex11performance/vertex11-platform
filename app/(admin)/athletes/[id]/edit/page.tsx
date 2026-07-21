@@ -37,14 +37,20 @@ export default function EditAthletePage() {
   useEffect(() => {
 
     async function loadAthlete() {
+      const {
+  data: { session },
+} = await supabase.auth.getSession();
+
+console.log("SESSION:", session);
 
       console.log("ID recebido:", id);
 
       const { data, error } = await supabase
         .from("athletes")
         .select("*")
-        .eq("id", id)
-        .single();
+
+console.log("TODOS:", data);
+console.log("ERROR:", error);
 
       console.log("DATA:", data);
       console.log("ERROR:", error);
@@ -353,4 +359,5 @@ export default function EditAthletePage() {
 
   );
 
+  
 }
